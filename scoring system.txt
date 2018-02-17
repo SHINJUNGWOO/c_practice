@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	FILE *board = fopen("board.txt", "a+");
+	char name[20] = { NULL };
+	int score[100] = { -1 };
+	int grade = 98;
+	int t = 10;
+	scanf("%s", name);
+	fprintf(board, "\n%s %d", name, grade);
+}
